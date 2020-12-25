@@ -17,6 +17,7 @@ font text Roboto 400, 500, 700, 900,
   --accent-color: #2196f3;
   --primary-paragraph-color: #757575;
   --primary-white-color: #ffffff;
+  --social-link-color: #afb1b8;
 }
 
 body {
@@ -318,9 +319,35 @@ body {
 }
 
 .team-par {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list .item {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* footer */
