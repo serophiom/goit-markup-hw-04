@@ -312,6 +312,7 @@ body {
 
 .team-list .item {
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team-list .item:not(:last-child) {
@@ -331,7 +332,7 @@ body {
   justify-content: center;
 }
 
-.social-list .item {
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -343,11 +344,75 @@ body {
   height: 44px;
 
   border-radius: 50%;
+  color: var(--social-link-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
+
+  fill: currentColor;
+}
+
+.social-icon:hover {
+  fill: var(--primary-white-color);
+}
+
+/* Client */
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.86;
+  text-align: center;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+  color: var(--social-link-color);
+}
+
+.logo1-icon {
+  width: 44.27px;
+  height: 49.23px;
+
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* footer */
@@ -357,6 +422,14 @@ body {
   padding-bottom: 60px;
 
   background-color: #000000;
+}
+
+.footer .conteiner {
+  display: inline-flex;
+}
+
+.adress-logo {
+  margin-right: 70px;
 }
 
 footer .logo {
@@ -394,6 +467,19 @@ footer .logo {
 }
 
 .street {
+  color: var(--primary-white-color);
+}
+
+.join {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+.footer-social {
   color: var(--primary-white-color);
 }
 
@@ -442,6 +528,11 @@ footer .logo {
 .portfolio-link .item {
   width: calc((100% - 60px) / 3);
   border: 1px solid rgba(238, 238, 238, 1);
+}
+
+.portfolio-link .item:hover,
+.portfolio-link .item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-link .item:not(:nth-child(3n)) {
