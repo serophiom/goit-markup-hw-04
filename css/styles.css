@@ -137,8 +137,6 @@ body {
 
 .nav-icon {
   margin-right: 10px;
-  /* width: 16px;
-  height: 12px; */
 
   fill: currentColor;
 }
@@ -407,9 +405,6 @@ body {
 }
 
 .logo-icon {
-  /* width: 44.27px;
-  height: 49.23px; */
-
   fill: currentColor;
 }
 
@@ -551,16 +546,6 @@ footer .logo {
 .portfolio-card:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-/* .portfolio-link .item:hover,
-.portfolio-link .item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
-
-/* .p-card:hover,
-.p-card:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
 
 .portfolio-link .item:not(:nth-child(3n)) {
   margin-right: 30px;
